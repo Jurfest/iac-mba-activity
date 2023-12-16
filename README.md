@@ -1,4 +1,4 @@
-# iac-mba-activity
+# IaC MBA Activity
 
 <h1 align="center">
   <img alt="Jurfest Apps Logo" src="./assets/logo.png" width="250px"/>
