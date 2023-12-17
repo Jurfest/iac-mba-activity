@@ -8,3 +8,6 @@
 
 # Ansible
 **/hosts.ini
+
+# SSH/Keys
+ssh-keys
