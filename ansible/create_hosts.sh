@@ -9,7 +9,7 @@ OUTPUT_JSON=$(terraform -chdir=$TERRAFORM_DIR output --json)
 echo "OUTPUT_JSON: $OUTPUT_JSON"
 
 # Extract the IP address from the JSON output
-IP=$(echo "$OUTPUT_JSON" | jq -r '.public_ips.value[0]')  # Assumes public_ips is a list, adjust if needed
+IP=$(echo "$OUTPUT_JSON" | jq -r '.public_ips.value[0]')  # Assumes jq is installed
 
 # Check if the IP was obtained
 if [ -z "$IP" ]; then
