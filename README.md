@@ -75,14 +75,14 @@ Inside the browser:
 
 ### Preview
 
-<h1 align="center">
+<div align="center">
     <img 
-      alt="Printscreen resultado do docker ps com terminal conectado na maquina virtual" src="./src/assets/containers_running_on_VM.png" width="940px"
+      alt="Printscreen resultado do docker ps com terminal conectado na maquina virtual" src="./assets/containers_running_on_VM.png" width="940px"
     />
-</h1>
-<h1 align="center">
+</div>
+<div align="center">
     <img alt="" src="./src/assets/img/az_front_vote_screen.png" width="940px"/>
-</h1>
+</div>
 
 <!-- ### Acknowledgment
 
