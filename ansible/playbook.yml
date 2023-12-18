@@ -75,4 +75,4 @@
         project_src: /home/ubuntu/docker/
         state: present
         build: yes
-        detached: yes
+        restarted: yes
