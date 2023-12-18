@@ -1,6 +1,4 @@
-<div align="center">
-  # IaC MBA Activity
-</div>
+# IaC MBA Activity
 
 <h1 align="center">
   <img alt="Jurfest Apps Logo" src="./assets/logo.png" width="250px"/>
@@ -61,7 +59,6 @@ $ az login
 ```
 
 Generate ssh-keys folder
-
 ```bash
 # Create ssh-keygen folder
 $ mkdir ssh-keygen
@@ -93,7 +90,6 @@ $ cd ..
 ```
 
 #### Running Ansible
-
 ```bash
 # Go to ansible folder
 $ cd ansible
@@ -130,7 +126,6 @@ Inside the browser:
 </h1>
 
 ### Acknowledgment
-
 "This Infrastructure as Code (IaC) exercise is built upon an Azure Sample showcasing a comprehensive full stack application called [Azure Voting App](https://github.com/Azure-Samples/azure-voting-app-redis.git).
 
 ### :page_facing_up: License
