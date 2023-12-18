@@ -72,9 +72,9 @@ $ cd ..
 
 ```
 
-### How to run Terraform and Ansible
+## How to run Terraform and Ansible
 
-## Running Terraform
+### Running Terraform
 
 After installing VS Code:
 
@@ -89,7 +89,7 @@ $ terraform apply -auto-approve
 $ cd ..
 ```
 
-## Running Ansible
+### Running Ansible
 ```bash
 # Go to ansible folder
 $ cd ansible
