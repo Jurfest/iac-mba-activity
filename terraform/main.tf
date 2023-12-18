@@ -38,9 +38,13 @@ resource "azurerm_linux_virtual_machine" "ubuntu" {
 
   source_image_reference {
     publisher = "Canonical"
-    offer     = "UbuntuServer"
-    sku       = "19.04"
-    version   = "latest"
+    # offer     = "UbuntuServer"
+    # sku       = "19.04"
+    # sku = "18.04-LTS"
+    # sku       = "16.04-LTS"
+    offer   = "0001-com-ubuntu-server-focal"
+    sku     = "20_04-lts-gen2"
+    version = "latest"
   }
 
 }
