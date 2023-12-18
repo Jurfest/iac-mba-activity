@@ -1,31 +1,44 @@
----
 - hosts: webservers
   become: true
 
   tasks:
-    - name: Install required system packages
+    - name: Update APT repository targets to Focal Fossa
       become: true
+      replace:
+        path: "/etc/apt/sources.list"
+        regexp: "disco"
+        replace: "focal"
+
+    - name: Update APT repository cache
       apt:
-        pkg:
-          - apt-transport-https
-          - ca-certificates
-          - curl
-          - software-properties-common
-          - python3-pip
-          - virtualenv
-          - python3-setuptools
+        update_cache: yes
+
+    - name: Install Docker Prereqs
+      apt:
+        name: "{{ item }}"
         state: latest
-        update_cache: true
-      when: ansible_os_family == 'Debian'  # Adjust for other distributions
+      loop:
+        - apt-transport-https
+        - ca-certificates
+        - curl
+        - software-properties-common
+        - python3-pip
+        - virtualenv
+        - python3-setuptools
+
+    - name: Add Docker GPG apt Key
+      apt_key:
+        url: "https://download.docker.com/linux/ubuntu/gpg"
+        state: present
 
     - name: Install Docker
       become: true
-      script: 
+      shell:
         cmd: "curl -fsSL https://get.docker.com -o get-docker.sh && sh get-docker.sh"
       args:
         creates: /usr/bin/docker
       register: docker_installed
-      when: ansible_os_family == 'Debian'  # Adjust for other distributions
+      when: ansible_os_family == 'Debian' # Adjust for other distributions
 
     - name: Install Docker Module for Python
       become: true
@@ -62,4 +75,4 @@
         project_src: /home/ubuntu/docker/
         state: present
         build: yes
-        restarted: yes
+        detached: yes
