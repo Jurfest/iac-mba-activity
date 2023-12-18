@@ -76,8 +76,6 @@ $ cd ..
 
 #### Running Terraform
 
-After installing VS Code:
-
 ```bash
 # Go to terraform folder
 $ cd terraform
