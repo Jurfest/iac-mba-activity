@@ -18,7 +18,7 @@
 
 <p align="center">
   <a href="#computer-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#installing-the-application">How to run</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#installing-the-application">How to run Terraform and Ansible</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#page_facing_up-license">License</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#mailbox_with_mail-get-in-touch">Get in touch</a>
 </p>
@@ -34,44 +34,78 @@ This project was developed with the following technologies:
 - [Azure](https://azure.microsoft.com/en-us/free)
 - [Redis](https://redis.io)
 
-<!-- ### Running Terraform
+### Setup
 
-Clone the repository and install the dependencies.
+Clone the repository
 
 ```bash
-# to clone the repository
-$ git clone https://github.com/Jurfest/iac-mba-activity.git
+# Clone the repository
+$ git clone https://github.com/jurfest/iac-mba-activity.git
 
-# go into the folder
-$ cd angular9-essencial-tutorial-from-coder/
+# Go to project's folder
+$ cd https://github.com/Jurfest/iac-mba-activity
 
-#install dependencies
-$ npm install
+# Open vscode - if wanted - or continue in the terminal or open another IDE
+$ code .
 
 ```
 
-### Running Ansible
+Connect to your Azure account
+
+```bash
+# Opens a new window to connect to the Azure cloud provider
+$ az login
+
+```
+
+Generate ssh-keys folder
+```bash
+# Create ssh-keygen folder
+$ mkdir ssh-keygen
+
+$ cd ssh-keygen
+
+# Generate public and private key files by responding to prompt questions
+$ ssh-keygen
+
+$ cd ..
+
+```
+
+### How to run Terraform and Ansible
+
+## Running Terraform
 
 After installing VS Code:
 
 ```bash
-$ code .
+# Go to terraform folder
+$ cd terraform
+
+# Run necessary terraform commands
+$ terraform init
+$ terraform plan
+$ terraform apply -auto-approve
+$ cd ..
 ```
-### :microscope: A way to inspect the code
 
-### Running the application
-
+## Running Ansible
 ```bash
-$ ng serve
+# Go to ansible folder
+$ cd ansible
+
+# Generate inventory file
+$ bash create_hosts.sh
+
+# Run playbook with verbosity
+$ ansible-playbook -i hosts.ini playbook.yml -vvv
 ```
+
+### :microscope: How to inspect the result
 
 Inside the browser:
 
-<p>http://localhost:4200</p> -->
-
-<!-- <img src="public/Print_1.PNG"/>
-<img src="public/Print_2.PNG"/>
-<img src="public/Print_3.PNG"/> -->
+<p>http://public_ip</p>
 
 ### Preview
 
@@ -83,10 +117,17 @@ Inside the browser:
 <h1 align="center">
     <img alt="Vote application running on browser" src="./assets/az_front_vote_screen.png" width="940px"/>
 </h1>
+<h1 align="center">
+    <img 
+      alt="Vote application running on browser" 
+      src="./assets/az_front_vote_screen_with_votes.png" 
+      width="940px"
+    />
+</h1>
 
-<!-- ### Acknowledgment
+### Acknowledgment
 
-This project is my result after completing the free, online and certified course provided by [CODER](https://www.cod3r.com.br/courses/angular-9-essencial). -->
+This IaC exercise is based in an Azure Sample containing a full stack application  [Azure Voting App](https://github.com/Azure-Samples/azure-voting-app-redis.git).
 
 ### :page_facing_up: License
 
@@ -95,38 +136,6 @@ This project is under the MIT license.
 ### :mailbox_with_mail: Get in touch!
 
 [LinkedIn](https://www.linkedin.com/in/diegojurfest/)
-
-<!-- ### Frontend aditional information
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
-
-### Backend aditional information
-
-Backend is not included in this repository. However it can be easily and quickly created, making use of [json-server](https://github.com/typicode/json-server).
-
-### Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-### Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-### Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-### Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-### Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-### Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md). -->
 
 ### Thats it ! :wave:
 
