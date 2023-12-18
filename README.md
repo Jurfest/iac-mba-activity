@@ -36,7 +36,7 @@ This project was developed with the following technologies:
 
 ### Setup
 
-Clone the repository
+Clone repository
 
 ```bash
 # Clone the repository
