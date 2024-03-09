@@ -108,7 +108,6 @@ Inside the browser:
 
 <p>http://public_ip</p>
 
-Inside the terminal:
 #### Connect to the Virtual Machine using SSH (Linux/Mac):
 ```bash
 # Connect to remote VM in the cloud (ssh azureadmin@11.111.111.11 -i ../ssh-keys/swarm-cluster)
