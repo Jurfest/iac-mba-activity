@@ -139,6 +139,21 @@ $ exit
     />
 </h1>
 
+### Destroying Infrastructure with Terraform
+```bash
+# Navigate to the Terraform configuration directory
+$ cd terraform
+
+# If you haven't already done so, initialize Terraform
+$ terraform init
+
+# Optional step to preview the changes Terraform will make to destroy the infrastructure
+$ terraform plan -destroy
+
+# Perform the destruction of resources. Terraform will prompt you to confirm this operation
+$ terraform destroy
+```
+
 ### Acknowledgment
 This Infrastructure as Code (IaC) exercise is built upon an Azure Sample showcasing a comprehensive full stack application called [Azure Voting App](https://github.com/Azure-Samples/azure-voting-app-redis.git).
 
@@ -191,3 +206,8 @@ by Diego Jurfest :tada:
 </div>
 
 ### -->
+
+<!-- TODO: 
+- Add script with operations to setup and configure infraestructure
+- Add alternative branch with AWS as cloud provider
+-->
