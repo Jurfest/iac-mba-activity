@@ -96,7 +96,10 @@ $ cd ansible
 $ bash create_hosts.sh
 
 # Run playbook with verbosity
-$ ansible-playbook -i hosts.ini playbook.yml -vvv
+$ ansible-playbook -i inventory.ini playbook.yml -vvv
+
+# Go back to main directory
+$ cd ..
 ```
 
 ### :microscope: How to inspect the result
@@ -104,6 +107,19 @@ $ ansible-playbook -i hosts.ini playbook.yml -vvv
 Inside the browser:
 
 <p>http://public_ip</p>
+
+#### Connect to the Virtual Machine using SSH (Linux/Mac):
+```bash
+# Connect to remote VM in the cloud (ssh azureadmin@11.111.111.11 -i ../ssh-keys/swarm-cluster)
+$ ssh azureadmin@public_ip -i /path/to/your/private_key
+
+# Verify if the containers are correctly being executed inside de VM
+$ docker ps
+
+# Disconnect from VM
+$ exit
+```
+
 
 ### Preview
 
@@ -122,6 +138,21 @@ Inside the browser:
       width="940px"
     />
 </h1>
+
+### Destroying Infrastructure with Terraform
+```bash
+# Navigate to the Terraform configuration directory
+$ cd terraform
+
+# If you haven't already done so, initialize Terraform
+$ terraform init
+
+# Optional step to preview the changes Terraform will make to destroy the infrastructure
+$ terraform plan -destroy
+
+# Perform the destruction of resources. Terraform will prompt you to confirm this operation
+$ terraform destroy
+```
 
 ### Acknowledgment
 This Infrastructure as Code (IaC) exercise is built upon an Azure Sample showcasing a comprehensive full stack application called [Azure Voting App](https://github.com/Azure-Samples/azure-voting-app-redis.git).
@@ -175,3 +206,8 @@ by Diego Jurfest :tada:
 </div>
 
 ### -->
+
+<!-- TODO: 
+- Add script with operations to setup and configure infraestructure
+- Add alternative branch with AWS as cloud provider
+-->
