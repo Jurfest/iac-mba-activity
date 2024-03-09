@@ -96,7 +96,22 @@ $ cd ansible
 $ bash create_hosts.sh
 
 # Run playbook with verbosity
-$ ansible-playbook -i hosts.ini playbook.yml -vvv
+$ ansible-playbook -i inventory.ini playbook.yml -vvv
+
+# Go back to main directory
+$ cd ..
+```
+
+#### Connect to the Virtual Machine using SSH (Linux/Mac):
+```bash
+# Connect to remote VM in the cloud (ssh azureadmin@11.111.111.11 -i ../ssh-keys/swarm-cluster)
+$ ssh azureadmin@public_ip -i /path/to/your/private_key
+
+# Verify if the containers are correctly being executed inside de VM
+$ docker ps
+
+# Disconnect from VM
+$ exit
 ```
 
 ### :microscope: How to inspect the result
