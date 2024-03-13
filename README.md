@@ -18,7 +18,7 @@
 
 <p align="center">
   <a href="#computer-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#installing-the-application">How to run Terraform and Ansible</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#how-to-run-terraform-and-ansible">How to run Terraform and Ansible</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#page_facing_up-license">License</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#mailbox_with_mail-get-in-touch">Get in touch</a>
 </p>
@@ -59,6 +59,7 @@ $ az login
 ```
 
 Generate ssh-keys folder
+
 ```bash
 # Create ssh-keygen folder
 $ mkdir ssh-keygen
@@ -88,6 +89,7 @@ $ cd ..
 ```
 
 #### Running Ansible
+
 ```bash
 # Go to ansible folder
 $ cd ansible
@@ -109,6 +111,7 @@ Inside the browser:
 <p>http://public_ip</p>
 
 #### Connect to the Virtual Machine using SSH (Linux/Mac):
+
 ```bash
 # Connect to remote VM in the cloud (ssh azureadmin@11.111.111.11 -i ../ssh-keys/swarm-cluster)
 $ ssh azureadmin@public_ip -i /path/to/your/private_key
@@ -119,7 +122,6 @@ $ docker ps
 # Disconnect from VM
 $ exit
 ```
-
 
 ### Preview
 
@@ -140,6 +142,7 @@ $ exit
 </h1>
 
 ### Destroying Infrastructure with Terraform
+
 ```bash
 # Navigate to the Terraform configuration directory
 $ cd terraform
@@ -155,6 +158,7 @@ $ terraform destroy
 ```
 
 ### Acknowledgment
+
 This Infrastructure as Code (IaC) exercise is built upon an Azure Sample showcasing a comprehensive full stack application called [Azure Voting App](https://github.com/Azure-Samples/azure-voting-app-redis.git).
 
 ### :page_facing_up: License
@@ -170,7 +174,6 @@ This project is under the MIT license.
 ---
 
 by Diego Jurfest :tada:
-
 
 <!-- <div align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
@@ -207,7 +210,7 @@ by Diego Jurfest :tada:
 
 ### -->
 
-<!-- TODO: 
+<!-- TODO:
 - Add script with operations to setup and configure infraestructure
 - Add alternative branch with AWS as cloud provider
 - Add alternative branch fetching vote-app from remote repository
