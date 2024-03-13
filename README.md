@@ -210,4 +210,5 @@ by Diego Jurfest :tada:
 <!-- TODO: 
 - Add script with operations to setup and configure infraestructure
 - Add alternative branch with AWS as cloud provider
+- Add alternative branch fetching vote-app from remote repository
 -->
