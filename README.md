@@ -72,6 +72,9 @@ $ ssh-keygen
 $ cd ..
 
 ```
+<!-- chmod 600 ssh-keys/swarm-cluster -->
+
+
 
 ### How to run Terraform and Ansible
 
@@ -120,7 +123,7 @@ $ ssh azureadmin@public_ip -i /path/to/your/private_key
 $ docker ps
 
 # Disconnect from VM
-$ exit
+$ exit # or press: ctrl + d
 ```
 
 ### Preview
@@ -212,6 +215,7 @@ by Diego Jurfest :tada:
 
 <!-- TODO:
 - Add script with operations to setup and configure infraestructure
+- Refactor playbook with roles (making the playbook more modular, reusable and simple to maintain)
 - Add alternative branch with AWS as cloud provider
 - Add alternative branch fetching vote-app from remote repository
 -->
