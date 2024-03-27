@@ -218,4 +218,5 @@ by Diego Jurfest :tada:
 - Refactor playbook with roles (making the playbook more modular, reusable and simple to maintain)
 - Add alternative branch with AWS as cloud provider
 - Add alternative branch fetching vote-app from remote repository
+_ Use "terraform graph" and a third party tool (like Graphviz) to respectively generate graph and transform .DOT file to image format
 -->
