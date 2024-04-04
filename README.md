@@ -75,7 +75,7 @@ $ cd ..
 ```
 <!-- chmod 600 ssh-keys/swarm-cluster -->
 
-### How to run Terraform and Ansible
+### How to run Terraform and Ansible (manual setup)
 
 ### Automated setup
 This Bash script automates the deployment of a full-stack application infrastructure using Terraform and Ansible. It provisions and configures a VM instance in Azure using Terraform, then configures the VM with Ansible, and finally executes a set of Docker containers using Docker Compose.
@@ -226,7 +226,6 @@ by Diego Jurfest :tada:
 ### -->
 
 <!-- TODO:
-- Add script with operations to setup and configure infraestructure
 - Refactor playbook with roles (making the playbook more modular, reusable and simple to maintain)
 - Add alternative branch with AWS as cloud provider
 - Add alternative branch fetching vote-app from remote repository
