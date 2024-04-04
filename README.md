@@ -18,6 +18,7 @@
 
 <p align="center">
   <a href="#computer-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#automated-setup">Automated setup</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#how-to-run-terraform-and-ansible">How to run Terraform and Ansible</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#page_facing_up-license">License</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#mailbox_with_mail-get-in-touch">Get in touch</a>
@@ -74,7 +75,18 @@ $ cd ..
 ```
 <!-- chmod 600 ssh-keys/swarm-cluster -->
 
+### How to run Terraform and Ansible
 
+### Automated setup
+This Bash script automates the deployment of a full-stack application infrastructure using Terraform and Ansible. It provisions and configures a VM instance in Azure using Terraform, then configures the VM with Ansible, and finally executes a set of Docker containers using Docker Compose.
+
+```bash
+# Ensure Terraform, Ansible, netcat (nc), and jq are installed.
+# After running the command bellow you can follow the prompts and monitor the logs for deployment progress.
+bash setup.sh
+
+# Remember to destroy infrastructure after use
+```
 
 ### How to run Terraform and Ansible
 
