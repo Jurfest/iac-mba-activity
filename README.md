@@ -19,7 +19,7 @@
 <p align="center">
   <a href="#computer-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#automated-setup">Automated setup</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#how-to-run-terraform-and-ansible">How to run Terraform and Ansible</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#how-to-manually-execute-terraform-and-ansible">How to manually execute Terraform and Ansible</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#page_facing_up-license">License</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#mailbox_with_mail-get-in-touch">Get in touch</a>
 </p>
@@ -87,7 +87,7 @@ bash setup.sh
 # Remember to destroy infrastructure after use
 ```
 
-### How to run Terraform and Ansible (manual setup)
+### How to manually execute Terraform and Ansible
 
 #### Running Terraform
 
