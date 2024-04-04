@@ -11,3 +11,6 @@
 
 # SSH/Keys
 ssh-keys
+
+# Log files
+*.log
