@@ -38,7 +38,7 @@ This project was developed with the following technologies:
 ### Initial Configuration Steps
 
 > [!NOTE] 
-> Preparation Steps
+> Preparation steps before manual or automated setup
 
 
 Clone repository
