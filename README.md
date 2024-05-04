@@ -35,7 +35,11 @@ This project was developed with the following technologies:
 - [Azure](https://azure.microsoft.com/en-us/free)
 - [Redis](https://redis.io)
 
-### Setup
+### Initial Configuration Steps
+
+> [!NOTE] 
+> Preparation Steps
+
 
 Clone repository
 
